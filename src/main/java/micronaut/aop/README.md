@@ -2,8 +2,8 @@
 
 - Programming paradigm that helps with separation of cross-cutting concerns
     - Complements OOP
-- Adds additional behavior (Advice) to without modifying existing code (too much)
-    - Can specify which code is modified by specifying "Pointcut" 
+- Adds additional behavior (Advice) without modifying existing code (too much)
+    - Can specify which code is modified by specifying "Pointcut" - example: log all methods with prefix `set`
 
 # AOP in Micronaut
 
@@ -12,7 +12,7 @@
     - Compile time 
     - Reflection free
 
-## Three Types
+## Three Types of Advices
 
 1. Around Advice
 1. Introduction Advice
