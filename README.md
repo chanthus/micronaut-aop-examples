@@ -7,3 +7,4 @@
 - [https://docs.micronaut.io/latest/guide/index.html#aop](https://docs.micronaut.io/latest/guide/index.html#aop)
 - [https://docs.spring.io/spring/docs/2.5.x/reference/aop.html](https://docs.spring.io/spring/docs/2.5.x/reference/aop.html)
 - [https://www.youtube.com/watch?v=S5yfTfPeue8](https://www.youtube.com/watch?v=S5yfTfPeue8)
+- [https://www.slideshare.net/graemerocher/micronaut-deep-dive-devoxx-belgium-2019](https://www.slideshare.net/graemerocher/micronaut-deep-dive-devoxx-belgium-2019)
