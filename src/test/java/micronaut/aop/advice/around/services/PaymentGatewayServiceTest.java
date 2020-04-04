@@ -9,8 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 @MicronautTest
 class PaymentGatewayServiceTest {
@@ -37,5 +36,15 @@ class PaymentGatewayServiceTest {
       "Credit card not found",
       assertedException.getMessage()
     );
+  }
+
+  @Test
+  void tokenise() {
+    val token1 = paymentGatewayService.tokenise(10);
+    val token2 = paymentGatewayService.tokenise(10);
+
+    assertNotNull(token1);
+    assertNotNull(token2);
+    assertEquals(token1, token2);
   }
 }
