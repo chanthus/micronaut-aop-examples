@@ -1,4 +1,4 @@
-package micronaut.domain.services;
+package micronaut.domain.services.gateway;
 
 import io.micronaut.test.annotation.MicronautTest;
 import lombok.extern.slf4j.Slf4j;
@@ -53,9 +53,5 @@ class PaymentGatewayServiceTest {
     assertNotNull(token1);
     assertNotNull(token2);
     assertEquals(token1, token2);
-
-    val wallets = walletService.readAll();
-
-    log.info("All wallets: {}", wallets);
   }
 }
