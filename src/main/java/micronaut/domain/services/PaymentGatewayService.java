@@ -1,13 +1,17 @@
 package micronaut.domain.services;
 
 import lombok.SneakyThrows;
+import lombok.val;
 import micronaut.aop.advice.around.annotations.cache.Cache;
 import micronaut.aop.advice.around.annotations.exceptionReMap.ReMapNotFoundException;
 import micronaut.aop.advice.around.annotations.timing.LogCall;
+import micronaut.aop.advice.methodAdapter.ApplicationMessagePublisher;
 import micronaut.domain.models.PaymentRequest;
 import micronaut.domain.models.PaymentResponse;
+import micronaut.domain.models.TokenResponse;
 import micronaut.domain.services.exceptions.HttpNotFoundException;
 
+import javax.inject.Inject;
 import javax.inject.Singleton;
 import java.util.UUID;
 
@@ -15,6 +19,9 @@ import static java.lang.Thread.sleep;
 
 @Singleton
 public class PaymentGatewayService {
+
+  @Inject
+  ApplicationMessagePublisher messagePublisher;
 
   @LogCall
   @SneakyThrows
@@ -29,7 +36,9 @@ public class PaymentGatewayService {
   }
 
   @Cache
-  public String tokenise(int cardNumber) {
-    return UUID.randomUUID().toString();
+  public TokenResponse tokenise(int cardNumber) {
+    val tokenResponse = new TokenResponse(UUID.randomUUID().toString());
+    messagePublisher.publish(tokenResponse);
+    return tokenResponse;
   }
 }
