@@ -1,4 +1,4 @@
-package micronaut.aop.app;
+package micronaut.app;
 
 import io.micronaut.runtime.Micronaut;
 

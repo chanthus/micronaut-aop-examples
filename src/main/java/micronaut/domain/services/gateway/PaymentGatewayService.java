@@ -1,4 +1,4 @@
-package micronaut.domain.services;
+package micronaut.domain.services.gateway;
 
 import lombok.SneakyThrows;
 import lombok.val;
@@ -6,10 +6,10 @@ import micronaut.aop.advice.around.annotations.cache.Cache;
 import micronaut.aop.advice.around.annotations.exceptionReMap.ReMapNotFoundException;
 import micronaut.aop.advice.around.annotations.timing.LogCall;
 import micronaut.aop.advice.methodAdapter.ApplicationMessagePublisher;
-import micronaut.domain.models.PaymentRequest;
-import micronaut.domain.models.PaymentResponse;
-import micronaut.domain.models.TokenResponse;
-import micronaut.domain.services.exceptions.HttpNotFoundException;
+import micronaut.domain.services.gateway.models.PaymentRequest;
+import micronaut.domain.services.gateway.models.PaymentResponse;
+import micronaut.domain.services.gateway.models.TokenResponse;
+import micronaut.domain.exceptions.HttpNotFoundException;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

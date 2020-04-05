@@ -1,18 +1,25 @@
 package micronaut.domain.services;
 
 import io.micronaut.test.annotation.MicronautTest;
+import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import micronaut.aop.advice.around.annotations.exceptionReMap.exceptions.NotFoundException;
-import micronaut.domain.models.PaymentRequest;
-import micronaut.domain.models.PaymentResponse;
+import micronaut.domain.services.gateway.PaymentGatewayService;
+import micronaut.domain.services.gateway.models.PaymentRequest;
+import micronaut.domain.services.gateway.models.PaymentResponse;
+import micronaut.domain.services.wallet.WalletService;
 import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Slf4j
 @MicronautTest
 class PaymentGatewayServiceTest {
+
+  @Inject
+  WalletService walletService;
 
   @Inject
   PaymentGatewayService paymentGatewayService;
@@ -46,5 +53,9 @@ class PaymentGatewayServiceTest {
     assertNotNull(token1);
     assertNotNull(token2);
     assertEquals(token1, token2);
+
+    val wallets = walletService.readAll();
+
+    log.info("All wallets: {}", wallets);
   }
 }

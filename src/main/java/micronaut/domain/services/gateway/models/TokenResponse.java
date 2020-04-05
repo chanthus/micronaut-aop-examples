@@ -1,4 +1,4 @@
-package micronaut.domain.models;
+package micronaut.domain.services.gateway.models;
 
 import lombok.Value;
 
