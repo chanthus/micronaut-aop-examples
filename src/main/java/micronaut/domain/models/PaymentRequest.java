@@ -1,4 +1,4 @@
-package micronaut.aop.advice.around.models;
+package micronaut.domain.models;
 
 import io.micronaut.core.annotation.Introspected;
 import lombok.Value;

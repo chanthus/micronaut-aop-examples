@@ -1,12 +1,12 @@
-package micronaut.aop.advice.around.services;
+package micronaut.domain.services;
 
 import lombok.SneakyThrows;
 import micronaut.aop.advice.around.annotations.cache.Cache;
 import micronaut.aop.advice.around.annotations.exceptionReMap.ReMapNotFoundException;
 import micronaut.aop.advice.around.annotations.timing.LogCall;
-import micronaut.aop.advice.around.models.PaymentRequest;
-import micronaut.aop.advice.around.models.PaymentResponse;
-import micronaut.aop.advice.around.services.exceptions.HttpNotFoundException;
+import micronaut.domain.models.PaymentRequest;
+import micronaut.domain.models.PaymentResponse;
+import micronaut.domain.services.exceptions.HttpNotFoundException;
 
 import javax.inject.Singleton;
 import java.util.UUID;

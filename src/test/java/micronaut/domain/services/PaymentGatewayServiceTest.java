@@ -1,10 +1,10 @@
-package micronaut.aop.advice.around.services;
+package micronaut.domain.services;
 
 import io.micronaut.test.annotation.MicronautTest;
 import lombok.val;
 import micronaut.aop.advice.around.annotations.exceptionReMap.exceptions.NotFoundException;
-import micronaut.aop.advice.around.models.PaymentRequest;
-import micronaut.aop.advice.around.models.PaymentResponse;
+import micronaut.domain.models.PaymentRequest;
+import micronaut.domain.models.PaymentResponse;
 import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;

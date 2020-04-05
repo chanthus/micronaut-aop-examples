@@ -4,7 +4,7 @@ import io.micronaut.aop.MethodInterceptor;
 import io.micronaut.aop.MethodInvocationContext;
 import lombok.val;
 import micronaut.aop.advice.around.annotations.exceptionReMap.exceptions.NotFoundException;
-import micronaut.aop.advice.around.services.exceptions.HttpNotFoundException;
+import micronaut.domain.services.exceptions.HttpNotFoundException;
 
 import javax.inject.Singleton;
 
