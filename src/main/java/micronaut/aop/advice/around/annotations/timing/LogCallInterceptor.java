@@ -19,3 +19,7 @@ public class LogCallInterceptor implements MethodInterceptor<Object, Object> {
     return result;
   }
 }
+
+/*
+ * How do we cache more details like arguments
+ */

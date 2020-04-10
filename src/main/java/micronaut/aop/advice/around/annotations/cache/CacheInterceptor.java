@@ -21,3 +21,7 @@ public class CacheInterceptor implements MethodInterceptor<Object, Object> {
     return previousResult;
   }
 }
+
+/*
+ * How do we support caching based on class/method/parameters?
+ */
