@@ -21,3 +21,7 @@ public class ReMapNotFoundExceptionInterceptor implements MethodInterceptor<Obje
     }
   }
 }
+
+/*
+ * Rather than remapping, can we retry?
+ */
