@@ -9,3 +9,4 @@
 - [https://www.youtube.com/watch?v=S5yfTfPeue8](https://www.youtube.com/watch?v=S5yfTfPeue8)
 - [https://www.slideshare.net/graemerocher/micronaut-deep-dive-devoxx-belgium-2019](https://www.slideshare.net/graemerocher/micronaut-deep-dive-devoxx-belgium-2019)
 - [http://hannesdorfmann.com/annotation-processing/annotationprocessing101](http://hannesdorfmann.com/annotation-processing/annotationprocessing101)
+- [https://www.oracle.com/technical-resources/articles/java/javareflection.html](https://www.oracle.com/technical-resources/articles/java/javareflection.html)
