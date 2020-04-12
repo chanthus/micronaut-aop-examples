@@ -1,8 +1,10 @@
 package micronaut.domain.services.gateway.models;
 
-import lombok.Value;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-@Value
+@Data
+@AllArgsConstructor
 public class PaymentResponse {
   int amount;
   boolean success;
