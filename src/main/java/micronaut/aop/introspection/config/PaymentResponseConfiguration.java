@@ -1,4 +1,4 @@
-package micronaut.domain.services.gateway.config;
+package micronaut.aop.introspection.config;
 
 import io.micronaut.core.annotation.Introspected;
 import micronaut.domain.services.gateway.models.PaymentResponse;

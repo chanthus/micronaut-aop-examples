@@ -1,4 +1,4 @@
-package micronaut.domain.services.introspection;
+package micronaut.aop.introspection.services;
 
 import io.micronaut.test.annotation.MicronautTest;
 import micronaut.domain.services.gateway.models.PaymentRequest;

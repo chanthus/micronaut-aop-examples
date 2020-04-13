@@ -1,4 +1,4 @@
-package micronaut.domain.services.introspection;
+package micronaut.aop.introspection.services;
 
 import io.micronaut.core.beans.BeanIntrospection;
 import io.micronaut.core.beans.BeanWrapper;
